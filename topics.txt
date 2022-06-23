@@ -8,12 +8,10 @@ b: topic_a, topic_b
 c: topic_a, topic_b, topic_c
 
 
-acid/base/ph
-atomic structure
-electrochemistry
-units/measurements
-thermo
-bonding
-periodic table
-stoichiometry
-solutions/mixtures
+Kinematics
+Forces/Dynamics
+Energy
+Momentum
+Rotation
+Oscillation
+Gravity
