@@ -10,7 +10,7 @@ document.write('<nav class="navbar navbar-inverse">\
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Kinematics\
       <span class="caret"></span></a>\
       <ul class="dropdown-menu">\
-        <li><a href="addTwoNumbers.html">Add Two Numbers</a></li>\
+        <li><a href="objectDroppedFromRest.html">Object Dropped From Rest</a></li>\
         <li><a href="hPlusToPh.html">[H+] to pH</a></li>\
         <li><a href="topic_c.html">Topic C</a></li>\
       </ul>\

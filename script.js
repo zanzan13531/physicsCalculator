@@ -2,7 +2,8 @@
 const topics = {
     "a" : [["Add Two Numbers", "addTwoNumbers.html"]],
     "b" : [["Add Two Numbers", "addTwoNumbers.html"], ["[H+] to pH", "hPlusToPh.html"]],
-    "c" : [["Add Two Numbers", "addTwoNumbers.html"], ["[H+] to pH", "hPlusToPh.html"], ["topic_c", "topic_c.html"]]
+    "c" : [["Add Two Numbers", "addTwoNumbers.html"], ["[H+] to pH", "hPlusToPh.html"], ["topic_c", "topic_c.html"]],
+    "object dropped from rest" : [["Object Dropped From Rest", "objectDroppedFromRest.html"]]
 };
 
 //called whenever a letter is entered into the searchbar
