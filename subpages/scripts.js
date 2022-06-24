@@ -18,7 +18,7 @@ function positionDroppedFromRest() {
         resultBox.innerHTML = "Invalid Input";
     } else {
         var deltaT = deltaX.times(2).div(acceleration);
-        deltaT = deltaT.pow(0.5);
+        deltaT = deltaT.sqrt();
         var vFinal = deltaT.times(acceleration);
         resultBox.innerHTML = "Δt = " + deltaT.toString() + "<br>" + "Vf = " + vFinal.toString();
     }
