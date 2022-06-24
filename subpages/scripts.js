@@ -9,8 +9,8 @@ function positionDroppedFromRest() {
     var acceleration = document.getElementById('acceleration').value;
     var deltaX = document.getElementById('deltaX').value;
 
-    acceleration = new BigNumber(number1);
-    deltaX = new BigNumber(number2);
+    acceleration = new BigNumber(acceleration);
+    deltaX = new BigNumber(deltaX);
 
     var resultBox = document.getElementById('positionResult');
 
@@ -29,8 +29,8 @@ function velocityDroppedFromRest() {
     var acceleration = document.getElementById('acceleration').value;
     var vFinal = document.getElementById('vFinal').value;
 
-    acceleration = new BigNumber(number1);
-    vFinal = new BigNumber(number2);
+    acceleration = new BigNumber(acceleration);
+    vFinal = new BigNumber(vFinal);
 
     var resultBox = document.getElementById('velocityResult');
 
@@ -49,8 +49,8 @@ function timeDroppedFromRest() {
     var acceleration = document.getElementById('acceleration').value;
     var deltaT = document.getElementById('deltaT').value;
 
-    acceleration = new BigNumber(number1);
-    deltaT = new BigNumber(number2);
+    acceleration = new BigNumber(acceleration);
+    deltaT = new BigNumber(deltaT);
 
     var resultBox = document.getElementById('timeResult');
 
