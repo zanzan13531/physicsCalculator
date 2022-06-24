@@ -17,9 +17,10 @@ function positionDroppedFromRest() {
     if ((acceleration == NaN) || (deltaX == NaN)) {
         resultBox.innerHTML = "Invalid Input";
     } else {
-        var deltaT = deltaX.times(2).divideBy(acceleration).sqrt();
+        var deltaT = deltaX.times(2).div(acceleration);
+        deltaT = deltaT.pow(0.5);
         var vFinal = deltaT.times(acceleration);
-        resultBox.innerHTML = "Δt = " + deltaT + "<br>" + "Vf = " + vFinal;
+        resultBox.innerHTML = "Δt = " + deltaT.toString() + "<br>" + "Vf = " + vFinal.toString();
     }
     
 }
@@ -37,9 +38,9 @@ function velocityDroppedFromRest() {
     if ((acceleration == NaN) || (vFinal == NaN)) {
         resultBox.innerHTML = "Invalid Input";
     } else {
-        var deltaT = vFinal.divideBy(acceleration);
+        var deltaT = vFinal.div(acceleration);
         var deltaX = deltaT.times(deltaT).times(acceleration).times(0.5);
-        resultBox.innerHTML = "Δt = " + deltaT + "<br>" + "Δx = " + deltaX;
+        resultBox.innerHTML = "Δt = " + deltaT.toString() + "<br>" + "Δx = " + deltaX.toString();
     }
 
 }
@@ -57,9 +58,9 @@ function timeDroppedFromRest() {
     if ((acceleration == NaN) || (deltaT == NaN)) {
         resultBox.innerHTML = "Invalid Input";
     } else {
-        var deltaV = deltaT.times(acceleration);
+        var vFinal = deltaT.times(acceleration);
         var deltaX = deltaT.times(deltaT).times(acceleration).times(0.5);
-        resultBox.innerHTML = "Vf = " + vFinal + "<br>" + "Δx = " + deltaX;
+        resultBox.innerHTML = "Vf = " + vFinal.toString() + "<br>" + "Δx = " + deltaX.toString();
     }
 
 }
