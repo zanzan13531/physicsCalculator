@@ -21,14 +21,14 @@
 
     <p>This assumes that the object experiences constant acceleration and that the object is dropped from rest, where the initial velocity is 0.</p>
 
-    <img src="../images/objectDroppedFromRest.jpg" alt="Diagram" width="25%">
+    <img src="../images/k_droppedFromRest.jpg" alt="Diagram" width="25%">
 
     <p>The default acceleration used is 10, but it can be adjusted below (commonly 9.81 instead).</p>
 
     <input id="acceleration" onkeyup="recalculateDroppedFromRest()" type="number"
         name="acceleration" step="any" value="10" placeholder="gravitational acceleration (Default 10 or 9.81 m/s/s)...">
 
-    <h3>Given change in position:</h3>
+    <h3>Given change in position (initial height of the object):</h3>
     
     <input id="deltaX" onkeyup="positionDroppedFromRest()" type="number"
         name="deltaX" step="any" placeholder="change in position (Δx)...">
@@ -50,7 +50,7 @@
         <br><p id="timeResult"></p><br>
 
     <!-- my script thing -->
-    <script src="scripts.js"></script>
+    <script src="scripts/k_droppedFromRest.js"></script>
     <script src="../bignumber/bignumber.js"></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

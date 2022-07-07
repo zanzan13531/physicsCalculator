@@ -17,15 +17,37 @@
     <script src="subNavbar.js"></script>
 
 
-    <h1>Object Thrown Vertically Up</h1>
+    <h1>Object Thrown Vertically</h1>\
 
-    <!-- input tag -->
-    <input id="numberField1" onkeyup="addTwoNumbers()" type="number"
-        name="number1" step="any" placeholder="Enter the first number...">
-    <input id="numberField2" onkeyup="addTwoNumbers()" type="number"
-        name="number2" step="any" placeholder="Enter the first number...">
+    <p>This assumes that the object experiences constant acceleration and that the object is thrown with an initial velocity of Vi (where the positive direction is upwards).</p>
 
-    <p id="result">0</p>
+    <img src="../images/objectDroppedFromRest.jpg" alt="Diagram" width="25%">
+
+    <p>The default acceleration used is 10, but it can be adjusted below (commonly 9.81 instead).</p>
+
+    <input id="acceleration" onkeyup="recalculateDroppedFromRest()" type="number"
+        name="acceleration" step="any" value="10" placeholder="gravitational acceleration (Default 10 or 9.81 m/s/s)...">
+
+    <h3>Given change in position (initial height of the object):</h3>
+    
+    <input id="deltaX" onkeyup="positionDroppedFromRest()" type="number"
+        name="deltaX" step="any" placeholder="change in position (Δx)...">
+
+        <br><p id="positionResult"></p><br>
+
+    <h3>Given final velocity:</h3>
+
+    <input id="vFinal" onkeyup="velocityDroppedFromRest()" type="number"
+        name="vFinal" step="any" placeholder="final velocity...">
+
+        <br><p id="velocityResult"></p><br>
+
+    <h3>Given the time it takes to reach the ground:</h3>
+
+    <input id="deltaT" onkeyup="timeDroppedFromRest()" type="number"
+        name="deltaT" step="any" placeholder="time taken to reach the ground (Δt)...">
+
+        <br><p id="timeResult"></p><br>
 
     <!-- my script thing -->
     <script src="scripts.js"></script>
